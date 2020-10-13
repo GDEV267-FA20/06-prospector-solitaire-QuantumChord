@@ -4,6 +4,36 @@ using UnityEngine;
 
 public class Deck : MonoBehaviour
 {
+    [Header("Set in Inspector")]
+
+    //Suits
+
+    public Sprite suitClub;
+
+    public Sprite suitDiamond;
+
+    public Sprite suitHeart;
+
+    public Sprite suitSpade;
+
+    public Sprite[] faceSprites;
+
+    public Sprite[] rankSprites;
+
+    public Sprite cardBack;
+
+    public Sprite cardbackGold;
+
+    public Sprite cardFront;
+
+    public Sprite cardFrontGold;
+
+    //Prefabs
+
+    public GameObject prefabCard;
+
+    public GameObject prefabSprite;
+
     [Header("Set Dynamically")]
 
     public PT_XMLReader xmlr;
