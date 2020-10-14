@@ -4,7 +4,40 @@ using UnityEngine;
 
 public class Card : MonoBehaviour
 {
-    //Defined later
+    [Header("Set Dynamically")]
+
+    public string suit;
+
+    public int rank;
+
+    public Color color = Color.black;
+
+    public string colS = "Black";
+
+    //This List holds all of the Decorator GameObjects
+
+    public List<GameObject> decoGOs = new List<GameObject>();
+
+    //This List holds all of the Pip GameObjects
+
+    public List<GameObject> pipGOs = new List<GameObject>();
+
+    public GameObject back;
+
+    public CardDefinition def;
+
+    public bool faceUp
+    {
+        get
+        {
+            return (!back.activeSelf);
+        }
+
+        set
+        {
+            back.SetActive(!value);
+        }
+    }
 }
 
 [System.Serializable]
