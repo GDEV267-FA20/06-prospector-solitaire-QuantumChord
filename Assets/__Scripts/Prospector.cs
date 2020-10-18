@@ -172,6 +172,7 @@ public class Prospector : MonoBehaviour
             layout.multiplier.x * layout.discardPile.x,
             layout.multiplier.y * layout.discardPile.y,
             -layout.discardPile.layerID + 0.5f);
+
         cd.faceUp = true;
 
         //Place it on top of the pile for depth sorting
@@ -276,7 +277,58 @@ public class Prospector : MonoBehaviour
 
                 //Clicking a card in the tableau will check if it's a valid play
 
+                bool validMatch = true;
+
+                if (!cd.faceUp)
+                {
+                    //If the card is face-down, it's not valid
+
+                    validMatch = false;
+                }
+
+                if (!AdjacentRank(cd, target))
+                {
+                    //If it's not an adjacent rank, it's not valid
+
+                    validMatch = false;
+                }
+
+                if (!validMatch) return;
+
+                //If we got here, then: Yay! It's a valid card.
+
+                tableau.Remove(cd);
+
+                MoveToTarget(cd);
+
                 break;
         }
     }
+
+    //Return true if the two cards are adjacent in rank (A & K wrap around)
+
+    public bool AdjacentRank(CardProspector c0, CardProspector c1)
+    {
+        //If either card is face-down, it's not adjacent.
+
+        if (!c0.faceUp || !c1.faceUp) return (false);
+
+        //If they are 1 apart, they are adjacent
+
+        if(Mathf.Abs(c0.rank - c1.rank) == 1)
+        {
+            return (true);
+        }
+
+        //If one is Ace and the other King, they are adjacent
+
+        if (c0.rank == 11 && c1.rank == 13) return (true);
+
+        if (c0.rank == 13 && c1.rank == 1) return (true);
+
+        //otherwise, return false
+
+        return (false);
+    }
+
 }
