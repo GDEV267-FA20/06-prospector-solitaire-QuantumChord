@@ -226,8 +226,11 @@ GameObject:
   - component: {fileID: 816484937}
   - component: {fileID: 816484936}
   - component: {fileID: 816484935}
+  - component: {fileID: 816484940}
+  - component: {fileID: 816484939}
+  - component: {fileID: 816484938}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: _MainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -298,3 +301,135 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &816484938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816484934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb1a628c2c386164aa7542589398770d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xmlr:
+    xmlText: 
+  multiplier: {x: 0, y: 0}
+  slotDefs: []
+  drawPile:
+    x: 0
+    y: 0
+    faceUp: 0
+    layerName: Default
+    layerID: 0
+    id: 0
+    hiddenBy: 
+    type: slot
+    stagger: {x: 0, y: 0}
+  discardPile:
+    x: 0
+    y: 0
+    faceUp: 0
+    layerName: Default
+    layerID: 0
+    id: 0
+    hiddenBy: 
+    type: slot
+    stagger: {x: 0, y: 0}
+  sortingLayerNames:
+  - Row0
+  - Row1
+  - Row2
+  - Row3
+  - Row4
+  - Row5
+  - Row6
+  - Discard
+  - Draw
+--- !u!114 &816484939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816484934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e975372e2138e94fb63c9d15d0dafff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startFaceUp: 0
+  suitClub: {fileID: 21300000, guid: f2e3abd22e9ae4d17ab5c0659ff3e024, type: 3}
+  suitDiamond: {fileID: 21300000, guid: f8c2745f3b53149c595d8fde43185468, type: 3}
+  suitHeart: {fileID: 21300000, guid: 3f3ffa8970b63467cad6ba98725b1c95, type: 3}
+  suitSpade: {fileID: 21300000, guid: a7994da692eef4500be008b80674eecb, type: 3}
+  faceSprites:
+  - {fileID: 21300000, guid: 0044ad2d99ea04858a663c3491cc9a91, type: 3}
+  - {fileID: 21300000, guid: c10418368653749f796f63e87cde78ec, type: 3}
+  - {fileID: 21300000, guid: 21a6739a4135346e6956ca54075d8c25, type: 3}
+  - {fileID: 21300000, guid: 21570ac654411438d8f6cc233ffb28e4, type: 3}
+  - {fileID: 21300000, guid: d86c46d6378144162964786d621fb0ca, type: 3}
+  - {fileID: 21300000, guid: 4ec6a5b1f47934636a6280e5abb475f8, type: 3}
+  - {fileID: 21300000, guid: ee100e0d0a1c04759a5a7537cf5e8752, type: 3}
+  - {fileID: 21300000, guid: 1b117bad312e24b2791cbc7dd2ea6d87, type: 3}
+  - {fileID: 21300000, guid: c6955b0be0ed8469d8907eb75524a9d8, type: 3}
+  - {fileID: 21300000, guid: 6f1efb7f571f948dfa995e521af3100a, type: 3}
+  - {fileID: 21300000, guid: ef50d4f09a2b3425fbbdb8ad5f8957b0, type: 3}
+  - {fileID: 21300000, guid: a61ea2d4e7838406b97649cd8a3f3f34, type: 3}
+  rankSprites:
+  - {fileID: -425995913362149430, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
+  - {fileID: 2304412477376101311, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
+  - {fileID: 4939210158302793225, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
+  - {fileID: 2998490070800472007, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
+  - {fileID: -4479338341004084719, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
+  - {fileID: -5997517502634537899, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
+  - {fileID: 1671874023668392819, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
+  - {fileID: -2772083927121017137, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
+  - {fileID: -2642023953887716003, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
+  - {fileID: 1691466138856397902, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
+  - {fileID: 5949368682610106806, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
+  - {fileID: 1108870331674003538, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
+  - {fileID: 5059402756318148790, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
+  - {fileID: -2704611688130657760, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
+  - {fileID: -6329860329445972959, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
+  - {fileID: 8997811152243715195, guid: a3dfadce2ec324208b9305ffd5119ba8, type: 3}
+  cardBack: {fileID: 21300000, guid: a8185ed8d47594bb8a3b8e2d9233f769, type: 3}
+  cardbackGold: {fileID: 21300000, guid: 8ecf4828943064b3a96f6258b54c0f11, type: 3}
+  cardFront: {fileID: 21300000, guid: 873a7658b7ec742228520c7b15510f4d, type: 3}
+  cardFrontGold: {fileID: 21300000, guid: 944dc539459fe4109b973bd4c97f68ee, type: 3}
+  prefabCard: {fileID: 5531684190782779299, guid: 982c305a5b02bc04aa62c8d206bc0acb,
+    type: 3}
+  prefabSprite: {fileID: 1000014090761352, guid: 30a6ba41f0d264815a76b64a60ee0b62,
+    type: 3}
+  xmlr:
+    xmlText: 
+  cardNames: []
+  cards: []
+  decorators: []
+  cardDefs: []
+  deckAnchor: {fileID: 0}
+--- !u!114 &816484940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816484934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16507335edc04714b89cb7238dcdcd13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deckXML: {fileID: 4900000, guid: c26f74f68c78902428283ff5db44c0a6, type: 3}
+  layoutXML: {fileID: 4900000, guid: 61f3f05951a2f4d98b35bddbc7549908, type: 3}
+  xOffset: 3
+  yOffSet: -2.5
+  layoutCenter: {x: 0, y: 0, z: 0}
+  deck: {fileID: 0}
+  layout: {fileID: 0}
+  drawPile: []
+  layoutAnchor: {fileID: 0}
+  target: {fileID: 0}
+  tableau: []
+  discardPile: []
