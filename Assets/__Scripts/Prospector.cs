@@ -28,6 +28,8 @@ public class Prospector : MonoBehaviour
 
     public Vector2 fsPosEnd = new Vector2(0.5f, 0.95f);
 
+    public float reloadDelay = 2f;
+
     [Header("Set Dynamically")]
 
     public Deck deck;
@@ -452,9 +454,21 @@ public class Prospector : MonoBehaviour
 
         //Reload the scene, resetting the game
 
-        SceneManager.LoadScene("__Prospector_Scene_0");
+        //SceneManager.LoadScene("__Prospector_Scene_0");
+
+        //Reload the scene in reloadDelay seconds
+        //This will give the score a moment to travel
+
+        Invoke("ReloadLevel", reloadDelay);
     }
 
+
+    void ReloadLevel()
+    {
+        //reload the scene, resetting the game
+
+        SceneManager.LoadScene("__Prospector_Scene_0");
+    }
     //Return true if the two cards are adjacent in rank (A & K wrap around)
 
     public bool AdjacentRank(CardProspector c0, CardProspector c1)
