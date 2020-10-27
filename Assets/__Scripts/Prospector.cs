@@ -14,6 +14,8 @@ public class Prospector : MonoBehaviour
 
     public TextAsset layoutXML;
 
+    public TextAsset LayoutXMLNew;
+
     public float xOffset = 3;
 
     public float yOffSet = -2.5f;
@@ -125,7 +127,9 @@ public class Prospector : MonoBehaviour
 
         layout = GetComponent<Layout>();
 
-        layout.ReadLayout(layoutXML.text);
+        //layout.ReadLayout(layoutXML.text);
+
+        layout.ReadLayout2(LayoutXMLNew.text);
 
         drawPile = ConvertListCardsToListCardProspectors(deck.cards);
 

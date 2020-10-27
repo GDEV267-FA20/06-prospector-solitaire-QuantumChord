@@ -37,7 +37,7 @@
 	
 	
 	<!-- Layer3, the next level. -->
-	<slot id="18" x="-2" y="-3" faceup="1" layer="3" />
+	<slot id="18" x="2" y="-3" faceup="1" layer="3" />
 	<slot id="19" x="4" y="-3" faceup="0" layer="3" hiddenby="22" />
 	<slot id="20" x="6" y="-3" faceup="0" layer="3" hiddenby="23" />
 	<slot id="21" x="8" y="-3" faceup="0" layer="3" hiddenby="24" />
@@ -58,7 +58,7 @@
 	<slot type="drawpile" x="6" y="4" xstagger="0.15" layer="6"/>
 	
 	<!-- This positions the discard pile and target card -->
-	<slot type="discardpile" x="0" y="2" layer="7"/>
+	<slot type="discardpile" x="0" y="4" layer="7"/>
 	
 </xmlNew>
 	
